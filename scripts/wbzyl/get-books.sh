@@ -2,8 +2,8 @@
 
 curl -o the-man-who-knew-too-much.txt http://www.gutenberg.org/cache/epub/1720/pg1720.txt
 curl -o the-idiot.txt http://www.gutenberg.org/cache/epub/2638/pg2638.txt
-# curl -o war-and-peace.txt http://www.gutenberg.org/cache/epub/2600/pg2600.txt
-# curl -o the-sign-of-the-four.txt http://www.gutenberg.org/cache/epub/2097/pg2097.txt
+curl -o war-and-peace.txt http://www.gutenberg.org/cache/epub/2600/pg2600.txt
+curl -o the-sign-of-the-four.txt http://www.gutenberg.org/cache/epub/2097/pg2097.txt
 
 # replace DOS newlines with UNIX newlines
 
