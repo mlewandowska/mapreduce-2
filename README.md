@@ -1,12 +1,9 @@
-# MapReduce w przykładach
+## MapReduce w przykładach
 
 ![Przykład MapReduce](/images/map-reduce.png)
 
 Źródło: Tom Gersic,
 [Big Data Made Small with Heroku, DynamoDB, and Elastic Map Reduce](http://www.modelmetrics.com/tomgersic/big-data-made-small-with-heroku-dynamodb-and-elastic-map-reduce/)
-
-
-## Nasze dane
 
 > It’s impossible to overstress this:<br>
 > 80% of the work in any data project is in cleaning the data.
@@ -110,6 +107,3 @@ Przykładowy JSON:
   "created_at": "2013-03-31T06:14:39-07:00"
 }
 ```
-# Data Wranglers
-
-![Data Wrangler](https://raw.github.com/nosql/data-refine/master/images/data-wrangler.jpg?login=wbzyl&token=5c44029438833b54e5b7bc564ed0479c)
