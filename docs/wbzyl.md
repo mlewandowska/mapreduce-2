@@ -1,4 +1,6 @@
-# 4 Books from Project Gutenberg
+## 4 Books from Project Gutenberg
+
+#### *Włodzimierz Bzyl*
 
 Do kolekcji *books* zaimportowano wszystkie akapity czterech
 książek:
