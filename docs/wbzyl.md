@@ -2,6 +2,8 @@
 
 #### *Włodzimierz Bzyl*
 
+--------
+
 Do kolekcji *books* zaimportowano wszystkie akapity czterech
 książek:
 
