@@ -101,7 +101,13 @@ Przykładowy JSON:
     "ref": "refs/heads/master",
     "size": 1,
     "shas": [
-      ["e5a8ae820950953ce115801fe099d42ecb481ed1","matwb@univ.gda.pl","update README-Ruby.md","Wlodek Bzyl",true]
+      [
+        "e5a8ae820950953ce115801fe099d42ecb481ed1",
+        "matwb@univ.gda.pl",
+        "update README-Ruby.md",
+        "Wlodek Bzyl",
+        true
+      ]
     ]
   },
   "created_at": "2013-03-31T06:14:39-07:00"
