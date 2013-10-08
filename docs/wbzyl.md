@@ -18,7 +18,7 @@ n	title	author	p
 4	The Idiot	Dostoyevsky, Fyodor	Some of the passengers by this particular train…
 ```
 
-Akapity zaimportowano do kolekcji *books* bazy *test*
+Następnie akapity zaimportowano do kolekcji *books* bazy *test*
 za pomocą programu *mongoimport*:
 
 ```sh
