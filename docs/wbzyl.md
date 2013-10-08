@@ -13,14 +13,14 @@ Akapity z czterech książek:
 
 zapisano w formacie TSV w pliku _gutenberg-books.tsv_:
 
-Wszystkie akapity zaimportowano do kolekcji *books* bazy *test*:
-
 ```tsv
 n	title	author	p
 4	The Idiot	Dostoyevsky, Fyodor	Some of the passengers by this particular train…
 ```
 
-Do importu danych użyto programu *mongoimport*:
+Akapity zaimportowano do kolekcji *books* bazy *test*
+za pomocą programu *mongoimport*:
+
 ```sh
 mongoimport -c books --type tsv --headerline < gutenberg-books.tsv
 ```
