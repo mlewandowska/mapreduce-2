@@ -40,6 +40,7 @@ Przykładowe agregacje MapReduce danych z kolekcji *books*
 są opisane w notatkach do wykładu
 [MapReduce w przykładach](http://sinatra.local/nosql/mongodb-mapreduce).
 
-Pliki pobrano za pomocą skryptu [get-books.sh](/scripts/wbzyl/get-books.sh).
-Zawartość pobranych plików skonwertowano do formatu TSV za pomocą
+*Uwagi:* 1. Pliki z tekstem książek pobrano za pomocą skryptu
+[get-books.sh](/scripts/wbzyl/get-books.sh).
+2. Zawartość pobranych plików skonwertowano do formatu TSV za pomocą
 skryptu [books2tsv](/scripts/wbzyl/books2tsv.rb).
