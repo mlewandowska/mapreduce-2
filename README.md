@@ -23,7 +23,7 @@
 1. Domurat, Szymon.
 1. Duwe, Oskar.
 1. Elszkowski, Adrian.
-1. Jacek Gałka.
+1. Gałka, Jacek.
 1. Głowacki, Michał.
 1. Gniado, Bartosz.
 1. Groszek, Rafał.
@@ -48,7 +48,7 @@
 1. Motławski, Mateusz.
 1. Napiórkowski, Sebastain.
 1. Osękowski, Dominik.
-1. Miłosz Osiński.
+1. Osiński, Miłosz.
 1. Ostrowski, Michał.
 1. Paczyński, Łukasz.
 1. Piasecka, Aleksandra.
