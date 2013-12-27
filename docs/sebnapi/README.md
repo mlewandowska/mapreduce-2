@@ -138,7 +138,7 @@ The reduce function is looking for more than one delayed incomming flight and mo
 
 ### Result
 
-The result can be seen [here](../../data/sebnapi/map_reduce_cascading_delays_result.json) an example part of the dataset returned by the [map reduce job](../../data/sebnapi/map_reduce_cascading_delays_result.js):
+The result can be seen [here](../../data/sebnapi/map_reduce_cascading_delays_result.json) an example part of the dataset returned by the [map reduce job](../../data/sebnapi/map_reduce_cascading_delays.js):
 
 ```js
 {
