@@ -4,7 +4,7 @@ continued from [aggregations-2/docs/sebnapi/README.md](https://github.com/nosql/
 
 ##Flights and Plane Data
 
-I downloaded 3 months (Jan-Mar) of flightdata for 2013 from the [Research and Innovative Technology Administration (RITA)](http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236) and plane data from the [Federal Aviation Administration](http://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/). By combining the `TAIL_NUM` with the `N-Number` from the aircraft registry, we get detailed informations about the plane used on the flight. I imported both datasets by this [script](../../data/sebnapi/import_rita.py) to mongodb resulting in Datasets like this:
+I downloaded 3 months (Jan-Mar) of flightdata for 2013 from the [Research and Innovative Technology Administration (RITA)](http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236) and plane data from the [Federal Aviation Administration](http://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/). By combining the `TAIL_NUM` with the `N-Number` from the aircraft registry, we get detailed informations about the plane used on the flight. I imported both datasets by this [script](https://github.com/nosql/aggregations-2/blob/master/data/sebnapi/import_rita.py) to mongodb resulting in Datasets like this:
 
 ```js
 {
