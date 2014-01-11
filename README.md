@@ -46,7 +46,7 @@
 1. Mieszała, Konrad.
 1. Motel, Mateusz.
 1. Motławski, Mateusz.
-1. Napiórkowski, Sebastain.
+1. Napiórkowski, Sebastian. [Cascading Flight Delays](/docs/sebnapi/README.md).
 1. Osękowski, Dominik.
 1. Osiński, Miłosz.
 1. Ostrowski, Michał.
