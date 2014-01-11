@@ -1,4 +1,4 @@
-# Lista anime - Map Reduce na [tych danych](../data/jdermont/anime.json.zip).
+# Lista anime - Map Reduce na [tych danych](../data/jdermont/anime.json.zip)
 
 ### Jacek Dermont
 
@@ -15,7 +15,7 @@ Przyładowy wpis:
 }
 ```
 
-## Map Reduce nr 1 - ilość rodzaji anime
+## Map Reduce nr 1 - ilość rodzajów anime
 ```js
 var map1 = function() {
   emit(this.type, 1);
@@ -120,4 +120,4 @@ Wynik:
 { "_id" : 2013, "value" : 212 }
 ```
 
-[Wykres](../images/jdermont/wykres.png)
+![Wykres](../images/jdermont/wykres.png)
