@@ -1,6 +1,6 @@
 ## MapReduce w przykładach
 
-![Przykład MapReduce](/images/map-reduce.png)
+![Przykład MapReduce](images/map-reduce.png)
 
 Źródło: Tom Gersic,
 [Big Data Made Small with Heroku, DynamoDB, and Elastic Map Reduce](http://www.modelmetrics.com/tomgersic/big-data-made-small-with-heroku-dynamodb-and-elastic-map-reduce/)
