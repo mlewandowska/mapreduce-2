@@ -1,10 +1,12 @@
+*This github repo was used to pass an [assignment](http://wbzyl.inf.ug.edu.pl/nosql/zadania) on my erasmus year.* 
+
 # MapReduce Example
 
 continued from [aggregations-2/docs/sebnapi/README.md](https://github.com/nosql/aggregations-2/blob/master/docs/sebnapi/README.md)
 
 ##Flights and Plane Data
 
-I downloaded 3 months (Jan-Mar) of flightdata for 2013 from the [Research and Innovative Technology Administration (RITA)](http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236) and plane data from the [Federal Aviation Administration](http://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/). By combining the `TAIL_NUM` with the `N-Number` from the aircraft registry, we get detailed informations about the plane used on the flight. I imported both datasets by this [script](https://github.com/nosql/aggregations-2/blob/master/data/sebnapi/import_rita.py) to mongodb resulting in Datasets like this:
+I downloaded 3 months (Jan-Mar) of flightdata for 2013 from the [Research and Innovative Technology Administration (RITA)](http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236) and plane data from the [Federal Aviation Administration](http://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/). By combining the `TAIL_NUM` with the `N-Number` from the aircraft registry, we get detailed informations about the plane used on the flight. I imported both datasets by this [script](https://github.com/nosql/aggregations-2/blob/master/data/sebnapi/import_rita.py) to mongodb resulting in datasets like this:
 
 ```js
 {
@@ -88,7 +90,7 @@ I downloaded 3 months (Jan-Mar) of flightdata for 2013 from the [Research and In
 
 ## Map-Reduce Cascading Flight Delays
 
-I thought about a Map-Reduce Job that could find cascaded delays, where a arriving flight would delay other departuring flights. The Approach splits the day in 24 hour slices and emits delayed Arrivals or Departures on a composed key `airport-code`-`daytimeslice` `daytimeslice = 0-24`. If a flight arrvies 10:38 it's in the 11th hour of the day.
+I thought about a Map-Reduce Job that could find cascaded delays, where a arriving flight would delay other departuring flights. The approach splits the day in 24 hour slices and emits delayed arrivals or departures on a composite key `airport-code`-`daytimeslice` `daytimeslice = 0-24`. If a flight arrvies 10:38 it's in the 11th hour of the day.
 
 ### Map
 
@@ -134,12 +136,13 @@ reduce = function (key, values) {
 }
 ```
 
-The reduce function is looking for more than one delayed incomming flight and more than one outgoing flight for the composed key `airport-code`-`daytimeslice`.
+The reduce function looks out for more than one delayed incomming flight and for more than one outgoing flight for the composite key `airport-code`-`daytimeslice`.
 
 ### Result
 
-The result can be seen [here](../../data/sebnapi/map_reduce_cascading_delays_result.json) an example part of the dataset returned by the [map reduce job](../../data/sebnapi/map_reduce_cascading_delays.js):
+The result can be seen [here](../../data/sebnapi/map_reduce_cascading_delays_result.json).
 
+An example part of the dataset returned by the [map reduce job](../../data/sebnapi/map_reduce_cascading_delays.js):
 ```js
 {
     "_id": "ACV-15",
@@ -185,13 +188,13 @@ The result can be seen [here](../../data/sebnapi/map_reduce_cascading_delays_res
 
 ```
 
-We can see 5 delayed incomming flights and two delayed outgoing flights for the Airport with the Code ACV in the 15th hour of the day.
+We can see 5 delayed incomming flights and two delayed outgoing flights for the Airport with the code ACV in the 15th hour of the day.
 
 ### Annotations
 
 > MongoDB will not call the reduce function for a key that has only a single value. The values argument is an array whose elements are the value objects that are “mapped” to the key.
 
-MongoDB has a weird policy for not calling the reduce function for keys that have only one value mapped, which result in results like this, these need to be ignored:
+MongoDB has a weird policy for not calling the reduce function for keys that have only one value mapped, which results in output like this:
 
 ```js
 {
@@ -205,6 +208,7 @@ MongoDB has a weird policy for not calling the reduce function for keys that hav
     }
 },
 ```
+These sets can be ignored.
 
 #### Launch the script:
 
