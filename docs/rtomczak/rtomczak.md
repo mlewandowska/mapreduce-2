@@ -1,7 +1,13 @@
 # Lista lotnisk na swiecie - Mapreduce z [tych danych](http://openflights.org/data.html)
 ___
 
-#### Robert Tomczak
+### Robert Tomczak
+
+#### MongoDB version
+
+```bash
+MongoDB version: 2.5.3
+```
 
 Po sciagnieciu pliku .pac zmieniamy na rozszerzenie csv i używamy na nim [skrypt](../../scripts/rtomczak/zmiana.py) w pythonie
 
@@ -90,6 +96,7 @@ Wynik wywolania:
 ...
 ```
 
+Wizualizacja danych pod linkiem : [Wykres](http://roberttomczak.github.io/charts/mr1.html)
 ___
 ### Map Reduce 2 - ilosc lotnisk nalezacych do danego typu zmiany czasu 
 
@@ -147,3 +154,5 @@ Wynik wywolania:
 { "_id" : "U", "value" : 2135 }
 { "_id" : "Z", "value" : 52 }
 ```
+
+Wizualizacja danych pod linkiem : [Wykres](http://roberttomczak.github.io/charts/mr2.html)
