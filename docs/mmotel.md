@@ -44,6 +44,8 @@ head -n 1 Train.csv > t1mln.csv
 tail -n 1000000 Train.csv >> t1mln.csv
 ```
 
+Powstały plik `t1mln.csv` waży `1.2GB` i zawiera `1 000 001` rekordów (licząć linię nagłówka).
+
 ***
 
 #MongoDB
