@@ -44,7 +44,7 @@ head -n 1 Train.csv > t1mln.csv
 tail -n 1000000 Train.csv >> t1mln.csv
 ```
 
-Powstały plik `t1mln.csv` waży `1.2GB` i zawiera `1 000 001` rekordów (licząć linię nagłówka).
+Powstały plik `t1mln.csv` waży `1.2GB` i zawiera `1 000 001` rekordów (licząc linię nagłówka).
 
 ***
 
@@ -69,6 +69,13 @@ Sun Jan 19 13:04:57.011     Progress: 1183729200/1202896973 98%
 Sun Jan 19 13:04:57.011       984100  9648/second
 Sun Jan 19 13:04:59.351 check 9 1000001
 Sun Jan 19 13:04:59.442 imported 1000000 objects
+```
+
+###Sprawdzenie
+
+```js
+db.train1.count()
+1000000
 ```
 
 ###Czasy
