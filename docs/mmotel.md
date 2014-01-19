@@ -1,11 +1,16 @@
-#Zadanie 3 - MongoDB
+#*Mateusz Motel*
+
+##***Zadanie 3***
 
 ##Spis treści
 
 * [Dane](#dane)
-* [Import](#import)
-* [MapReduce](#mapreduce)
-* [Przegląd wyniku](#przegl%C4%85d-wyniku)
+* [MongoDB](#MongoDB)
+    * [Import](#mongodb-import)
+    * [MapReduce](#mongodb-mapreduce)
+    * [Przegląd wyniku](#mongodb-przegl%C4%85d-wyniku)
+
+***
 
 ##Dane
 
@@ -39,7 +44,11 @@ head -n 1 Train.csv > t1mln.csv
 tail -n 1000000 Train.csv >> t1mln.csv
 ```
 
-##Import
+***
+
+#MongoDB
+
+##MongoDB - Import
 
 ```sh
 time mongoimport -d train -c train1 --type csv --headerline --file t1mln.csv 
@@ -70,7 +79,9 @@ sys   0m2.286s
 
 W ciągu `1m44.356s` zaimportował się `1 000 000` rekordów, co daje `~9 615` insertów do bazy na sekundę.
 
-##MapReduce
+***
+
+##MongoDB - MapReduce
 
 ###Opis
 
@@ -184,7 +195,9 @@ db.wcdocs.mapReduce(m2, r2, {out: "wc"});
 }
 ```
 
-###Przegląd wyniku
+***
+
+###MongoDB - Przegląd wyniku
 
 ####10 najpopularniejszych słów
 
