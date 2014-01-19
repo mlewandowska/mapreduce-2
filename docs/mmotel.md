@@ -222,7 +222,7 @@ db.wc.find().sort({value: -1}).limit(10);
 
 #####Wykres
 
-![3-mongo-map-reduce-res-review-1](./images/3-mongo-mp-1.png)
+![3-mongo-map-reduce-res-review-1](../images/mmotel/3-mongo-mp-1.png)
 
 ####10 najpopularniejszych języków
 
@@ -264,7 +264,7 @@ db.wc.find({
 
 #####Wykres
 
-![3-mongo-map-reduce-res-review-2](./images/3-mongo-mp-2.png)
+![3-mongo-map-reduce-res-review-2](../images/mmotel/3-mongo-mp-2.png)
 
 
 ####Popularne systemy operacyjne
@@ -297,4 +297,4 @@ db.wc.find({
 
 #####Wykres
 
-![3-mongo-map-reduce-res-review-3](./images/3-mongo-mp-3.png)
+![3-mongo-map-reduce-res-review-3](../images/mmotel/3-mongo-mp-3.png)
