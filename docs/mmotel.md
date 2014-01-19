@@ -6,9 +6,9 @@
 
 * [Dane](#dane)
 * [MongoDB](#MongoDB)
-    * [Import](#mongodb-import)
-    * [MapReduce](#mongodb-mapreduce)
-    * [Przegląd wyniku](#mongodb-przegl%C4%85d-wyniku)
+    * [Import](#mongodb---import)
+    * [MapReduce](#mongodb---mapreduce)
+    * [Przegląd wyniku](#mongodb---przegl%C4%85d-wyniku)
 
 ***
 
