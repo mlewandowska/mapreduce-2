@@ -3,7 +3,7 @@ ___
 
 #### Robert Tomczak
 
-Po sciagnieciu pliku .pac zmieniamy na rozszerzenie csv i używamy na nim [skrypt]("../../scripts/rtomczak/zmiana.py") w pythonie
+Po sciagnieciu pliku .pac zmieniamy na rozszerzenie csv i używamy na nim [skrypt](../../scripts/rtomczak/zmiana.py) w pythonie
 
 Następnie plik ```lotniska.csv``` jest gotowy do importu
 
