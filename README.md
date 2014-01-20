@@ -44,7 +44,7 @@
 1. Matulewski, Damian.
 1. Melzer, Grzegorz.
 1. Mieszała, Konrad.
-1. Motel, Mateusz.
+1. Motel, Mateusz. [Stack Overflow Titles](/docs/mmotel.md).
 1. Motławski, Mateusz.
 1. Napiórkowski, Sebastian. [Cascading Flight Delays](/docs/sebnapi/README.md).
 1. Osękowski, Dominik.
