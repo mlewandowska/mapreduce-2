@@ -64,7 +64,7 @@
 1. Skowroński, Krzysztof.
 1. Smykowski, Adrian.
 1. Sott, Tomasz.
-1. Stefanowicz, Michał.
+1. Stefanowicz, Michał.[Przykladowa szkola](/docs/mstefanowicz.md).
 1. Szygenda, Mateusz.
 1. Tomczak, Robert.
 1. Wąsowicz, Michał.
