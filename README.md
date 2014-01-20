@@ -71,7 +71,7 @@
 1. Winsławski, Bartłomiej.
 1. Wiśniewski, Konrad.
 1. Wiśniewski, Konrad.
-1. Zdunek, Kamil.
+1. Zdunek, Kamil. [Airports](/docs/kzdunek.md).
 1. Żarkowski, Mateusz.
 
 
