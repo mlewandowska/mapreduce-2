@@ -66,7 +66,7 @@
 1. Sott, Tomasz.
 1. Stefanowicz, Michał.[Przykladowa szkola](/docs/mstefanowicz.md).
 1. Szygenda, Mateusz.
-1. Tomczak, Robert.
+1. Tomczak, Robert [Lista lotnisk](/docs/rtomczak/rtomczak.md).
 1. Wąsowicz, Michał.
 1. Winsławski, Bartłomiej.
 1. Wiśniewski, Konrad.
