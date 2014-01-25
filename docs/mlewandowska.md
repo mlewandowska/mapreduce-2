@@ -99,7 +99,7 @@ Wybranie 10 najpopularniejszych imion:
 { "_id" : "Daniel", "value" : 634562 }
 ```
 
-Najpopularniejsze imiona w latach 1910-2013: <br/>
+Najpopularniejsze imiona w latach 1910-2012: <br/>
 1.Michael - 1327668  <br/>
 2.John - 1308670  <br/>
 3.Robert - 1282317  <br/>
@@ -113,3 +113,70 @@ Najpopularniejsze imiona w latach 1910-2013: <br/>
 
 ![wykres1](../images/mlewandowska/wyk1.png)
 
+
+
+10 najpopularniejszych imion żeńskich w stanie NY na przestrzeni lat 1910-2012
+
+Funkcja dotycząca imienia i liczby jego występowania.
+```sh
+var mapFunction2 = function() {
+   if(this.sex == "F" && this.state== "NY")
+                       emit(this.name, this.number);
+                   };  
+```
+
+Funkcja zliczająca ilość występowania danego imienia.
+```sh
+var reduceFunction2 = function(key, values) {
+                          return Array.sum(values);
+                      };
+```
+
+MapReduce:
+```sh
+db.names.mapReduce( mapFunction2, reduceFunction2, {out: "mapReduce2"})
+```
+
+Wynik:
+```sh
+> db.names.mapReduce( mapFunction2, reduceFunction2, {out: "mapReduce2"})
+{
+        "result" : "mapReduce2",
+        "timeMillis" : 25284,
+        "counts" : {
+                "input" : 1128181,
+                "emit" : 153945,
+                "reduce" : 40935,
+                "output" : 8821
+        },
+        "ok" : 1,
+}
+```
+
+Wybranie 10 najpopularniejszych imion:
+```sh
+> db.mapReduce2.find().sort({value:-1}).limit(10)
+{ "_id" : "Mary", "value" : 276334 }
+{ "_id" : "Patricia", "value" : 163326 }
+{ "_id" : "Barbara", "value" : 146964 }
+{ "_id" : "Elizabeth", "value" : 137730 }
+{ "_id" : "Susan", "value" : 122239 }
+{ "_id" : "Margaret", "value" : 115421 }
+{ "_id" : "Linda", "value" : 113757 }
+{ "_id" : "Jennifer", "value" : 111293 }
+{ "_id" : "Nancy", "value" : 93465 }
+{ "_id" : "Helen", "value" : 92911 }
+```
+Najpopularniejsze imiona żeńskie w NY w latach 1910-2012: <br/>
+1.Mary - 276334   <br/>
+2.Patricia- 163326  <br/>
+3.Barbara - 146964  <br/>
+4.Elizabeth - 137730  <br/>
+5.Susan - 122239  <br/>
+6.Margaret - 115421  <br/>
+7.Linda - 113757  <br/>
+8.Jennifer - 111293  <br/>
+9.Nancy -  93465   <br/>
+10.Helen - 92911  <br/>
+
+![wykres1](../images/mlewandowska/wyk2.png)
