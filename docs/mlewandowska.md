@@ -99,4 +99,17 @@ Wybranie 10 najpopularniejszych imion:
 { "_id" : "Daniel", "value" : 634562 }
 ```
 
+Najpopularniejsze imiona w latach 1910-2013: <br/>
+1.Michael - 1327668  <br/>
+2.John - 1308670  <br/>
+3.Robert - 1282317  <br/>
+4.James - 1132978  <br/>
+5.David - 1037278  <br/>
+6.William - 892236  <br/>
+7.Mary - 839123  <br/>
+8.Richard - 746056  <br/>
+9.Joseph - 725289  <br/>
+10.Daniel - 634562  <br/>
+
+![wykres1](../images/mlewandowska/wyk1.png)
 
