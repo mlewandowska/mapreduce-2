@@ -10,7 +10,6 @@ Dane zostały pobrane ze strony catalog.data.gov z USA i dotyczą popularności 
 echo %time%
 18:56:08,99
 mongoimport -d babies -c names --type csv --headerline --file names.csv
-...
 echo %time%
 18:58:35,56
 ```
