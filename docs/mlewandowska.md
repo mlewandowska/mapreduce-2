@@ -22,16 +22,16 @@ Sprawdzenie liczby rekordów:
 C:\mongodb\bin>mongo
 MongoDB shell version: 2.4.3
 connecting to: test
-> use babies
+ use babies
 switched to db babies
-> db.names.count()
+ db.names.count()
 1128181
 ```
 
 Przykładowy rekord:
 
 ```sh
-> db.names.findOne()
+ db.names.findOne()
 {
         "_id" : ObjectId("52bb1c5d16752993c0c7836e"),
         "state" : "CA",
@@ -86,7 +86,7 @@ Wynik:
 
 Wybranie 10 najpopularniejszych imion:
 ```sh
-> db.mapReduce1.find().limit(10).sort({value:-1})
+ db.mapReduce1.find().limit(10).sort({value:-1})
 { "_id" : "Michael", "value" : 1327668 }
 { "_id" : "John", "value" : 1308670 }
 { "_id" : "Robert", "value" : 1282317 }
@@ -139,7 +139,7 @@ db.names.mapReduce( mapFunction2, reduceFunction2, {out: "mapReduce2"})
 
 Wynik:
 ```sh
-> db.names.mapReduce( mapFunction2, reduceFunction2, {out: "mapReduce2"})
+ db.names.mapReduce( mapFunction2, reduceFunction2, {out: "mapReduce2"})
 {
         "result" : "mapReduce2",
         "timeMillis" : 25284,
@@ -155,7 +155,7 @@ Wynik:
 
 Wybranie 10 najpopularniejszych imion:
 ```sh
-> db.mapReduce2.find().sort({value:-1}).limit(10)
+ db.mapReduce2.find().sort({value:-1}).limit(10)
 { "_id" : "Mary", "value" : 276334 }
 { "_id" : "Patricia", "value" : 163326 }
 { "_id" : "Barbara", "value" : 146964 }
